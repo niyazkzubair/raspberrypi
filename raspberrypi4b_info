@@ -1,0 +1,38 @@
+Bought in June 2020
+Bought from pibox.in through Amazon.in
+
+SPECIFICATION: (https://static.raspberrypi.org/files/product-briefs/200521+Raspberry+Pi+4+Product+Brief.pdf)
+Broadcom BCM2711, Quad core Cortex-A72 (ARM v8) 64-bit SoC @ 1.5GHz
+2GB, 4GB or 8GB LPDDR4-3200 SDRAM (depending on model)
+2.4 GHz and 5.0 GHz IEEE 802.11ac wireless, Bluetooth 5.0, BLE
+Gigabit Ethernet
+2 USB 3.0 ports; 2 USB 2.0 ports.
+Raspberry Pi standard 40 pin GPIO header (fully backwards compatible with previous boards)
+2 × micro-HDMI ports (up to 4kp60 supported)
+2-lane MIPI DSI display port
+2-lane MIPI CSI camera port
+4-pole stereo audio and composite video port
+H.265 (4kp60 decode), H264 (1080p60 decode, 1080p30 encode)
+OpenGL ES 3.0 graphics
+Micro-SD card slot for loading operating system and data storage
+5V DC via USB-C connector (minimum 3A*)
+5V DC via GPIO header (minimum 3A*)
+Power over Ethernet (PoE) enabled (requires separate PoE HAT)
+Operating temperature: 0 – 50 degrees C ambient
+
+Useful commands
+1. To view the Pi's temperature, type cat /sys/class/thermal/thermal_zone0/temp. Divide the result by 1000 to find the value in degrees Celsius. 
+   Alternatively, there is a vcgencmd, 'vcgencmd measure_temp' that interrogates the GPU directly for its temperature.
+2. Measure ARM core clock frequency - 'vcgencmd measure_clock arm'
+3. 'vcgencmd get_config int': this lists all the integer config options that are set (non-zero).
+4. 'vcgencmd get_config str': this lists all the string config options that are set (non-null).
+5. More documenation on config commands - https://elinux.org/RPiconfig
+6. List of USB devices - lsusb
+7. To add aliases - alias c='clear' to '~/.bashrc'
+8. Cron jobs - https://www.raspberrypi.org/documentation/linux/usage/cron.md
+9. Wireless network details - 'iwconfig'
+10. See link quality continuously on screen - '/proc/net/wireless' OR 'cat /proc/net/wireless'
+11. To continuesly run the above command - 'watch -n 1 cat /proc/net/wireless'
+
+Useful resources:
+1. https://www.raspberrypi.org/magpi-issues/Projects_Book_v1.pdf
