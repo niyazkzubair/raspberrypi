@@ -21,18 +21,34 @@ Power over Ethernet (PoE) enabled (requires separate PoE HAT)
 Operating temperature: 0 – 50 degrees C ambient
 
 Useful commands
-1. To view the Pi's temperature, type cat /sys/class/thermal/thermal_zone0/temp. Divide the result by 1000 to find the value in degrees Celsius. 
+01. To view the Pi's temperature, type cat /sys/class/thermal/thermal_zone0/temp. Divide the result by 1000 to find the value in degrees Celsius. 
    Alternatively, there is a vcgencmd, 'vcgencmd measure_temp' that interrogates the GPU directly for its temperature.
-2. Measure ARM core clock frequency - 'vcgencmd measure_clock arm'
-3. 'vcgencmd get_config int': this lists all the integer config options that are set (non-zero).
-4. 'vcgencmd get_config str': this lists all the string config options that are set (non-null).
-5. More documenation on config commands - https://elinux.org/RPiconfig
-6. List of USB devices - lsusb
-7. To add aliases - alias c='clear' to '~/.bashrc'
-8. Cron jobs - https://www.raspberrypi.org/documentation/linux/usage/cron.md
-9. Wireless network details - 'iwconfig'
+02. Measure ARM core clock frequency - 'vcgencmd measure_clock arm'
+03. 'vcgencmd get_config int': this lists all the integer config options that are set (non-zero).
+04. 'vcgencmd get_config str': this lists all the string config options that are set (non-null).
+05. More documenation on config commands - https://elinux.org/RPiconfig
+06. List of USB devices - lsusb
+07. To add aliases - alias c='clear' to '~/.bashrc'
+08. Cron jobs - https://www.raspberrypi.org/documentation/linux/usage/cron.md
+09. Wireless network details - 'iwconfig'
 10. See link quality continuously on screen - '/proc/net/wireless' OR 'cat /proc/net/wireless'
 11. To continuesly run the above command - 'watch -n 1 cat /proc/net/wireless'
+12. Check version of OS on pi - 'cat /etc/os-release'
+13. check for size - 'df -h'
+14. Update and upgrade my Raspbian - 'sudo apt-get update; sudo apt-get dist-upgrade'
 
 Useful resources:
-1. https://www.raspberrypi.org/magpi-issues/Projects_Book_v1.pdf
+01. https://www.raspberrypi.org/magpi-issues/Projects_Book_v1.pdf
+02. Connecting USB cam
+   - https://www.raspberrypi.org/documentation/usage/webcams/
+   - https://manpages.debian.org/jessie/fswebcam/fswebcam.1.en.html
+   - To access multiple cameras - 'fswebcam image.jpg --no-banner -i <camera_number>' (camera_number = 0,1,...)
+03. Try picam and webcam - https://hub.packtpub.com/working-webcam-and-pi-camera/   
+04. Webcam streaming to a website - http://awesomeprojectsxyz.blogspot.com/2015/09/beginners-guide-how-to-setup-usb-webcam.html
+05. List of cams testsed on pi - https://elinux.org/RPi_USB_Webcams
+06. 20 best picamera projects - https://www.seeedstudio.com/blog/2020/01/20/20-best-raspberry-pi-camera-projects-to-try-in-2020/
+07. Crowd size detection - https://www.hackster.io/mcallistertad/crowd-size-estimation-at-the-edge-cabf72
+
+Explore  
+01. Node RED
+02. Debian buster documentation - https://manpages.debian.org/contents-buster.html
