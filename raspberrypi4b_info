@@ -49,7 +49,10 @@ Useful commands
          UseSTARTTLS=YES
    - Command : 'sendmail username@gmail.com  < email.txt' OR 'echo "Test" | ssmtp nkz1984@gmail.com'
 17. Raspberry Pi configuration - 'sudo raspi-config'
-18. List devices connected - 'sudo dmesg -C'
+18. This command is useful for troubleshooting your Raspberry Pi boot. It will show you every event that happened in the start sequence
+    Here you could see errors with drivers or services and understand why something doesn’t work the way you want
+    List devices connected - 'sudo dmesg -C'
+19. List of useful commands - https://raspberrytips.com/raspberry-pi-commands/
 
 Useful resources:
 01. https://www.raspberrypi.org/magpi-issues/Projects_Book_v1.pdf
