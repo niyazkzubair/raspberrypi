@@ -9,7 +9,9 @@
       3) Installed fswebcam using
       sudo apt-get install fswebcam
       
-      4) Tried capturing a photo with it using
+      4) Use the USB External HUB to connect the USBCam. Wihout this, it didn't detect
+      
+      5) Tried capturing a photo with it using
       fswebcam -r 640x480 --no-banner image3.jpg
       
-      5) It worked!! Then Installed Motion and tried streaming it and that also worked!!
+      6) It worked!! Then Installed Motion and tried streaming it and that also worked!!
