@@ -36,6 +36,19 @@ Useful commands
 12. Check version of OS on pi - 'cat /etc/os-release'
 13. check for size - 'df -h'
 14. Update and upgrade my Raspbian - 'sudo apt-get update; sudo apt-get dist-upgrade'
+15. To get list of all installed software - 'dpkg --get-selections'
+16. Enable sending email
+   - Get package : 'sudo apt install ssmtp'
+   - Configure in /etc/ssmtp \/ssmtp.conf with below entry
+         root=postmaster
+         mailhub=smtp.gmail.com:587
+         hostname=raspberrypi
+         AuthUser=AGmailUserName@gmail.com
+         AuthPass=TheGmailPassword
+         FromLineOverride=YES
+         UseSTARTTLS=YES
+   - Command : 'sendmail username@gmail.com  < email.txt' OR 'echo "Test" | ssmtp nkz1984@gmail.com'
+17. Raspberry Pi configuration - 'sudo raspi-config'
 
 Useful resources:
 01. https://www.raspberrypi.org/magpi-issues/Projects_Book_v1.pdf
