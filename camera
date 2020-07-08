@@ -1,2 +1,15 @@
-Live test of camera - https://webcamtests.com/
-https://images-eu.ssl-images-amazon.com/images/I/A1XyHgibClS.pdf
+1. Live test of camera - https://webcamtests.com/
+2. https://images-eu.ssl-images-amazon.com/images/I/A1XyHgibClS.pdf
+3. To install fswebcam
+      1) Removed Motion from Raspberry Pi using
+      sudo apt-get --purge remove motion
+
+      2) Disabled Raspberry Pi Camera in raspi-config and rebooted the Pi
+
+      3) Installed fswebcam using
+      sudo apt-get install fswebcam
+      
+      4) Tried capturing a photo with it using
+      fswebcam -r 640x480 --no-banner image3.jpg
+      
+      5) It worked!! Then Installed Motion and tried streaming it and that also worked!!
