@@ -49,6 +49,7 @@ Useful commands
          UseSTARTTLS=YES
    - Command : 'sendmail username@gmail.com  < email.txt' OR 'echo "Test" | ssmtp nkz1984@gmail.com'
 17. Raspberry Pi configuration - 'sudo raspi-config'
+18. List devices connected - 'sudo dmesg -C'
 
 Useful resources:
 01. https://www.raspberrypi.org/magpi-issues/Projects_Book_v1.pdf
