@@ -1,0 +1,7 @@
+refer to this - https://www.raspberrypi-spy.co.uk/2019/06/using-a-usb-audio-device-with-the-raspberry-pi/
+
+lsusb
+aplay -l
+sudo nano /usr/share/alsa/alsa.conf (defaults.ctl.card 0/1, defaults.pcm.card 0/1)
+alsamixer
+speaker-test -c2
